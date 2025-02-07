@@ -1,0 +1,26 @@
+<!-- guess.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Word</title>
+    <script>
+        function checkAnswer(question, correctAnswer) {
+            let answer = prompt(question);
+            if (answer && answer.toLowerCase() === correctAnswer.toLowerCase()) {
+                alert("Correct! 🎉");
+            } else {
+                alert("Oops! Try again! 🥰");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Guess the Word Game</h1>
+    <button onclick="checkAnswer('What is the color of love? ❤️', 'Red')">Question 1</button>
+    <button onclick="checkAnswer('Which word means forever love?', 'Eternal')">Question 2</button>
+    <button onclick="checkAnswer('What is Tanya’s favorite color?', 'Pink')">Question 3</button>
+    <button onclick="checkAnswer('Which flower is a symbol of love? 🌹', 'Rose')">Question 4</button>
+    <button onclick="checkAnswer('What is the sweetest word for a loved one?', 'Darling')">Question 5</button>
+    <button onclick="checkAnswer('Which day celebrates love every year? ❤️', 'Valentine')">Question 6</button>
+</body>
+</html>
